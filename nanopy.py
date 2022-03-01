@@ -1,15 +1,20 @@
 def print_file():
-    keyboard.write(base_file_output)
+    # Type the file and listen for incoming keybinding event(s)
+    keyboard.write(base_file)
     keyboard.add_hotkey('ctrl+z', lambda: ask_save())
 def input_file():
+    # 'input the console'
     return sys.stdin.read()
 def ask_save():
+    # If Ctrl+Z is pressed, clear the console and ask for confirmation as to whether save the file or not
     os.system('cls' if os.name=='nt' else 'clear')
     try:
+        os.system('cls' if os.name=='nt' else 'clear')
         console.input("                   [bold red]Nanopy[/bold red] | {}                   \n[light red]Save changes ?[/light red]\nYes(Y) or No(N)\n-> ".format(file))
     except KeyboardInterrupt:
         os.system('cls' if os.name=='nt' else 'clear')
-try:# Imports
+try:
+    # Imports
     try:
         import sys, os
         import rich
@@ -28,17 +33,18 @@ try:# Imports
     if len(sys.argv) == 1:
         rich.print("[bold  underline red]Nanopy - Usage[/bold underline red]\nnanopy [bold green]{file}[/bold green]\nExample: [reverse]nanopy my-file.txt[/reverse]")
         exit()
+    # Read given file
     file = sys.argv[1]
+    base_file = "\r".join(open(file, 'r').readlines())
+    # Clear terminal and print nanopy's interface
     os.system('cls' if os.name=='nt' else 'clear')
-    os.system('mode 400,150')
-    base_file = open(file, 'r')
-    base_file_lines = base_file.readlines()
-    base_file_output = "\r".join(base_file_lines)
-    userInput = rich.print("                   [bold red]Nanopy[/bold red] | {}                   ".format(file))
+    rich.print("                   [bold red]Nanopy[/bold red] | {} | [reverse]Ctrl+Z[/reverse] to exit".format(file))
+    # Start two threads, one which types the file, and another one which 'inputs the console'
     threading.Thread(target=input_file).start()
     threading.Thread(target=print_file).start()
     
 except KeyboardInterrupt:
+    # If Ctrl+X is pressed, clear the console and ask for confirmation as to whether save the file or not
     os.system('cls' if os.name=='nt' else 'clear')
     try:
         console.input("                   [bold red]Nanopy[/bold red] | {}                   \n[light red]Save changes ?[/light red]\nYes(Y) or No(N)\n-> ".format(file))
