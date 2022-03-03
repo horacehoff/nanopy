@@ -15,8 +15,9 @@
 
 ## Usage
 
-```sh
-nanopy {file}\Example: nanopy my-file.txt
+```python
+nanopy {file}
+Example: nanopy my-file.txt
 ```
 
 ## Author
@@ -39,6 +40,9 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [Just_a_Mango](https://github.com/just-a-mango).<br />
 This project is [MIT](https://github.com/just-a-mango/nanopy/blob/main/LICENSE) licensed.
-
+<br />
+<br />
+<br />
+<br />
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README (and many others) was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator), please check it out!_
