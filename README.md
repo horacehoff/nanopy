@@ -6,7 +6,7 @@
 A console text editor written entirely in Python, very much inspired from nano.
 ## Usage/Examples
 
-```bash
+```python
 nanopy {file}
 Example: nanopy my-file.txt
 ```
