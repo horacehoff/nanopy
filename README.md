@@ -1,4 +1,4 @@
-[![MIT License](https://img.shields.io/github/license/just-a-mango/nanopy?color=blu&style=for-the-badge)](https://github.com/just-a-mango/nanopy/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/github/license/just-a-mango/nanopy?color=black&style=for-the-badge&labelColor=22272e)](https://github.com/just-a-mango/nanopy/blob/main/LICENSE)
 
 
 # Nanopy
