@@ -9,9 +9,7 @@
   </a>
 </p>
 
-> A console text editor written entirely in Python, very much inspired from nano.
-
-### 🏠 [Homepage](https://github.com/just-a-mango/nanopy)
+**A console text editor written entirely in Python, very much inspired from nano.**
 
 ## Usage
 
