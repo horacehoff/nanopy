@@ -5,9 +5,6 @@
   <a href="https://github.com/just-a-mango/nanopy/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/pokoracio" target="_blank">
-    <img alt="Twitter: pokoracio" src="https://img.shields.io/twitter/follow/pokoracio.svg?style=social" />
-  </a>
 </p>
 
 **A console text editor written entirely in Python, very much inspired from nano.**
