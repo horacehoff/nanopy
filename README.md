@@ -7,7 +7,7 @@
   </a>
 </p>
 
-**A console text editor written entirely in Python, very much inspired from nano.**
+**A console text editor written entirely in C++, very much inspired from nano.**
 
 ## Usage
 
